@@ -36,7 +36,7 @@ When you order online from Walmart or Target, you are browsing Go websites. Or w
 
 I do admit that the moment I checked out Go, I was hooked. It was a much needed breath of fresh air compared to my day job. I was having to dabble on the side with Python ([FastAPI](https://fastapi.tiangolo.com/), [Sanic](https://sanic.dev/en/) and [Django](https://www.djangoproject.com/)) just to keep my sanity. Rust is another very interesting language these days. I will be learning it more.
 
-I am learning [Cobra](https://cobra.dev/) for a cleaner cli interface. I am also reading O’Reilly's [TensorFlow.js book](https://www.ebooks.com/en-us/book/detail/210286340/). I think ML will permeate all over IT. ML will help IT perceive patterns and trends in Data. I am glad to learn at [I/O 2022](https://blog.angular.io/angular-at-i-o-2022-b0db02c9b596) that Angular has [partnership](https://www.youtube.com/watch?v=df_QYkxfnfA) with TensorFlow.js.
+I am learning [Cobra](https://cobra.dev/) for a cleaner cli interface. I am also reading O’Reilly's [TensorFlow.js book](https://www.ebooks.com/en-us/book/detail/210286340/). I think ML will permeate all over IT. ML will help IT perceive patterns and trends in Data. I am glad to learn at [I/O 2022](https://blog.angular.io/angular-at-i-o-2022-b0db02c9b596) that Angular has [partnership](https://www.youtube.com/watch?v=df_QYkxfnfA) with [TensorFlow.js](https://www.tensorflow.org/js).
 
 Go has 25 keywords and frankly this talk on [Simplicity is Complicated](https://www.programmingtalks.org/talk/dotgo-2015-rob-pike-simplicity-is-complicated) by Rob Pike won me over. For webapp dev Go is just about perfect.
 
