@@ -289,7 +289,7 @@ user1@penguin:~/Projects/go-static-server/src/server$
 :
 ```
 
-I hope this has been helpful. I hope I got to share with you that a Go static server is a useful base for the eventual development into our webapp serer.
+I hope this has been helpful. I hope I got to share with you that a Go static server is a useful base for the eventual development into our webapp server.
 
 Happy coding! 😊
 
