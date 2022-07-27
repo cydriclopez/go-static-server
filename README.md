@@ -61,9 +61,9 @@ user1@penguin:~/Downloads$
 
 **Note** that this command differs from Google's installation [instruction here](https://go.dev/doc/install) where the ***rm*** and ***tar*** commands are not prefixed with ***sudo***. The folder ***/usr/local*** is usually owned by the ***root*** account. You will not be able to write into this ***/usr/local*** folder unless you prefix your command with ***sudo*** to obtain ***root*** rights for the life of the command. You must be a member of the ***sudo*** group to use ***sudo***.
 
-This command is actually 2 commands concatenated by ***&&*** symbol. The first command ***rm -rf*** can be <ins>**very dangerous**</ins> when prefixed by the ***sudo*** command. <ins>**It can completely obliterate whatever folder you pass to it! So be very careful.**</ins> To be safe you can copy the the whole command string using ***ctrl-c*** then paste into the terminal using ***ctrl-shift-v***.
+This command is actually 2 commands concatenated by ***&&*** symbol. The first command ***rm -rf*** can be <ins>**very dangerous**</ins> when prefixed by the ***sudo*** command. <ins>**It can completely obliterate whatever folder you pass to it! So be very careful.**</ins> The command ***rm -rf*** is used to clear the ***/usr/local/go*** folder. Simply overwriting into it with a new copy without clearing this folder can create problems in running Go.
 
-The second command ***tar*** unzips the downloaded file into the ***/usr/local*** folder.
+To be safe you can copy the the whole command string using ***ctrl-c*** then paste into the terminal using ***ctrl-shift-v***. The second command ***tar*** unzips the downloaded file into the ***/usr/local*** folder.
 
 ```bash
 user1@penguin:~/Downloads$
