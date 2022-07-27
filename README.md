@@ -133,7 +133,7 @@ import (
 func main() {
     folder := "../client/dist-static/primeng-quickstart-cli/"
     http.Handle("/", http.FileServer(http.Dir(folder)))
-    log.Fatal(http.ListenAndServe(":4200", nil))
+    log.Fatal(http.ListenAndServe(":3000", nil))
 }
 ```
 
