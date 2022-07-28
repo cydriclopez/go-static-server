@@ -255,7 +255,7 @@ stic ~/Projects/ng/ultima12/dist/ultima 4000`)
 
 6\.2\. Next we can compile with ***go install stic.go***. Follow the steps below. <ins>***You may have to substitute your folder here.***</ins>
 
-Note that below we run ***stic ../client/dist-static/primeng-quickstart-cli*** by passing the relative path to our static folder.
+Compiling the static web server with ***go install stic.go***.
 
 ```bash
 user1@penguin:~/Projects/go-static-server/src/server$
@@ -290,7 +290,24 @@ Listening on port: 3000
 Press Ctrl-C to stop server
 ```
 
-So, after running ***stic ../client/dist-static/primeng-quickstart-cli***, then we can open ***localhost:3000*** in our browser. Here I clicked on ***Tree demo*** to show the ***Tree demo*** page.<br/>
+Or we could have changed folder, with ***cd ../client/dist-static/primeng-quickstart-cli***, into the folder we want to serve. From this current folder, signified by a period ".", we can then serve it by typing "stic .".
+
+Any which way is fine when running our static web server.
+
+```bash
+user1@penguin:~/Projects/go-static-server/src/server$
+:cd ../client/dist-static/primeng-quickstart-cli
+
+user1@penguin:~/Projects/go-static-server/src/client/dist-static/primeng-quickstart-cli$
+:stic .
+
+2022/07/27 21:51:47
+Serving static folder: .
+Listening on port: 3000
+Press Ctrl-C to stop server
+```
+
+We can then open ***localhost:3000*** in our browser. Here I clicked on ***Tree demo*** to show the ***Tree demo*** page.<br/>
 <img src="images/primeng-tree-demo.png" width="650"/>
 
 To exit out of the server app, go back to your terminal then press ***ctrl-c***.
