@@ -260,7 +260,27 @@ Note that below we run ***stic ../client/dist-static/primeng-quickstart-cli*** b
 ```bash
 user1@penguin:~/Projects/go-static-server/src/server$
 :go install stic.go
+```
 
+Running our ***stic*** static server without parameters.
+
+```bash
+user1@penguin:~/Projects/go-static-server/src/server$
+:stic
+
+2022/07/27 21:21:33
+Utility web server program to serve a static folder.
+For serving Angular "ng build --watch" dist/project folder.
+Usage: stic STATIC_FOLDER_TO_SERVE [PORT_NUMBER]
+Default port number: 3000
+Examples:
+stic ~/Projects/ng/ultima12/dist/ultima
+stic ~/Projects/ng/ultima12/dist/ultima 4000
+```
+
+Running our static server ***stic ../client/dist-static/primeng-quickstart-cli*** with our static folder from the previous tutorial.
+
+```bash
 user1@penguin:~/Projects/go-static-server/src/server$
 :stic ../client/dist-static/primeng-quickstart-cli
 
@@ -288,6 +308,8 @@ Press Ctrl-C to stop server
 user1@penguin:~/Projects/go-static-server/src/server$
 :
 ```
+
+You can now use this utility program to serve your static files. A simple utility like is production grade thanks to Go's speed and concurrency. Go's standard library is battle tested with popular use all over the web.
 
 I hope this has been helpful. I hope I got to share with you that a Go static server is a useful base for the eventual development into our webapp server.
 
