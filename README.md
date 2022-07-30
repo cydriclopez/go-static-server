@@ -26,7 +26,7 @@ In this tutorial we do not have Angular sourcecode in the ***src/client*** folde
 
 This is not the venue for any comparative analysis on the merits of Go over any other language. I like them all. I happen to have simply chosen Go (as well as Angular, and Postgresql) as key pieces for my own projects.
 
-I like that Go generates a stand-alone executable without the need for separate external bulky confusing libraries. And it compiles really fast, instantly in seconds. Deploying a Go executable is simply copy-and-paste. With Go you can easily cross-compile to another CPU/OS combination.
+I like that Go generates a stand-alone executable without the need for separate external bulky confusing libraries. And it compiles really fast, instantly in seconds. Deploying a Go executable is simply a one-file copy-and-paste or a quick ***scp*** file copy. With Go you can easily cross-compile to another CPU/OS combination.
 
 The Go language main website is [Go.dev](https://go.dev/). The [Go wiki](https://github.com/golang/go/wiki) has a page titled [Why Go](https://github.com/golang/go/wiki/whygo). Here is a wiki page on [Go Users](https://github.com/golang/go/wiki/GoUsers). Here is another that discusses [moving a code base to Go](https://github.com/golang/go/wiki/FromXToGo) from some other language. And here is a page on Go [success stories](https://github.com/golang/go/wiki/SuccessStories) from around the web.
 
