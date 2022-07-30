@@ -326,7 +326,7 @@ user1@penguin:~/Projects/go-static-server/src/server$
 :
 ```
 
-You can now use this utility program to serve your static files. A simple utility like is production grade thanks to Go's speed and concurrency. Go's standard library is battle tested with popular use all over the web.
+You can now use this utility program to serve your static files. A simple utility like this is production grade thanks to Go's speed and concurrency. Go's standard library is battle tested with popular use all over the web.
 
 I hope this has been helpful. I hope I got to share with you that a Go static server is a useful base for the eventual development into our webapp server.
 
