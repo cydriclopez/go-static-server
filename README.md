@@ -44,9 +44,13 @@ These days I am also learning [Cobra](https://cobra.dev/), for a cleaner cli int
 
 Installing Go is straightforward. It is a quick download and then expand the tar.gz file. It can take less than 60 seconds depending on your download speed. Follow the following steps.
 
-#### 3.1. Download Go into your ***~/Downloads*** folder. Using your browser, download Go from the website: [https://go.dev/dl/](https://go.dev/dl/)
+#### 3.1. Download and install Go
 
-#### 3.2. In your terminal go into your download folder by typing ***cd ~/Downloads*** and then confirm that it is in the folder by typing ***ll go\****
+Download Go into your ***~/Downloads*** folder. Using your browser, download Go from the website: [https://go.dev/dl/](https://go.dev/dl/)
+
+#### 3.2. Confirm your Go file download
+
+In your terminal go into your download folder by typing ***cd ~/Downloads*** and then confirm that it is in the folder by typing ***ll go\****
 
 ```bash
 user1@penguin:~$
@@ -57,7 +61,9 @@ user1@penguin:~/Downloads$
 -rw-r--r-- 1 user1 user1 141812725 Jul 21 16:31 go1.18.4.linux-amd64.tar.gz
 ```
 
-#### 3.3. Issue the command: ***sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.18.4.linux-amd64.tar.gz***
+#### 3.3. Unzip the Go tar.gz file
+
+Issue the command: ***sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.18.4.linux-amd64.tar.gz***
 
 **Note** that this command differs from Google's installation [instruction here](https://go.dev/doc/install) where the ***rm*** and ***tar*** commands are not prefixed with ***sudo***. The folder ***/usr/local*** is usually owned by the ***root*** account. You will not be able to write into this ***/usr/local*** folder unless you prefix your command with ***sudo*** to obtain ***root*** rights for the life of the command. You must be a member of the ***sudo*** group to use ***sudo***.
 
@@ -70,13 +76,17 @@ user1@penguin:~/Downloads$
 :sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.18.4.linux-amd64.tar.gz
 ```
 
-#### 3.4. Make sure that, in your ***~/.bashrc*** file, the Go compiler folder ***/usr/local/go/bin*** is in your ***PATH*** system variable. You can also include the folder ***~/go/bin*** as this will be, by default, where Go will save executables from compiling your code with ***go install*** command.
+#### 3.4. Update your PATH
+
+Make sure that, in your ***~/.bashrc*** file, the Go compiler folder ***/usr/local/go/bin*** is in your ***PATH*** system variable. You can also include the folder ***~/go/bin*** as this will be, by default, where Go will save executables from compiling your code with ***go install*** command.
 
 ```bash
 export PATH=$PATH:/usr/local/go/bin:~/go/bin
 ```
 
-#### 3.5. After updating your ***PATH***, then reload your ***~/.bashrc*** file with the command: ***source ~/.bashrc***. Then confirm that the installation worked by typing ***go version***.
+#### 3.5. Reload your PATH and confirm Go install
+
+After updating your ***PATH***, then reload your ***~/.bashrc*** file with the command: ***source ~/.bashrc***. Then confirm that the installation worked by typing ***go version***.
 
 ```bash
 :source ~/.bashrc
@@ -119,7 +129,9 @@ Also as shown above, the folder ***src/server*** contains 2 go files: ***main.go
 
 ### 5. Demo code #1
 
-#### 5.1. Below is the listing of the ***main.go*** file. This is the most basic static file web server. Note that in the listing below the ***folder*** variable contains a string that is a relative path to our static folder ***../client/dist-static/primeng-quickstart-cli/***.
+#### 5.1. Listing of the minimum static file web server
+
+Below is the listing of the ***main.go*** file. This is the most basic static file web server. Note that in the listing below the ***folder*** variable contains a string that is a relative path to our static folder ***../client/dist-static/primeng-quickstart-cli/***.
 
 ```go
 package main
@@ -137,7 +149,9 @@ func main() {
 }
 ```
 
-#### 5.2. Now that we already have a running Go compiler, we can compile ***main.go***. Follow the steps below. <ins>***You may have to substitute your folder here.***</ins>
+#### 5.2. Compile our minimum static file web server
+
+Now that we already have a running Go compiler, we can compile ***main.go***. Follow the steps below. <ins>***You may have to substitute your folder here.***</ins>
 
 ```bash
 user1@penguin:~/Projects/go-static-server/src$
@@ -156,7 +170,9 @@ user1@penguin:~/Projects/go-static-server/src/server$
 :main
 ```
 
-#### 5.3. Note that earlier in ***3.4.*** we added the folder ***~/go/bin*** into our PATH. As a result we can now run ***main*** because the result of ***go install main.go*** is an executable file ***main*** in the folder ***~/go/bin*** which is now in our PATH.
+#### 5.3. Load web app in our browser
+
+Note that earlier in ***3.4.*** we added the folder ***~/go/bin*** into our PATH. As a result we can now run ***main*** because the result of ***go install main.go*** is an executable file ***main*** in the folder ***~/go/bin*** which is now in our PATH.
 
 So, after running the executable ***main***, here at this point we can open ***localhost:3000*** in our browser.<br/>
 <img src="images/primeng-quickstart-cli.png" width="650"/>
@@ -174,7 +190,9 @@ user1@penguin:~/Projects/go-static-server/src/server$
 
 ### 6. Demo code #2
 
-#### 6.1. Below is the listing of the ***stic.go*** file. This is a bit more improved version of our basic static file web server.
+#### 6.1. Listing of our improved static file web server "stic"
+
+Below is the listing of the ***stic.go*** file. This is a bit more improved version of our basic static file web server.
 
 So here is our demo code #2. We will eventually tweak this code to accommodate our controllers by which our Angular code can interact with. It is quite basic for a static server but it does the job.
 
@@ -253,7 +271,9 @@ stic ~/Projects/ng/ultima12/dist/ultima 4000`)
 }
 ```
 
-#### 6.2. Next we can compile with ***go install stic.go***. Follow the steps below. <ins>***You may have to substitute your folder here.***</ins>
+#### 6.2. Compile our minimum "stic" file web server
+
+Next we can compile with ***go install stic.go***. Follow the steps below. <ins>***You may have to substitute your folder here.***</ins>
 
 Compiling the static web server with ***go install stic.go***.
 
@@ -277,6 +297,8 @@ Examples:
 stic ~/Projects/ng/ultima12/dist/ultima
 stic ~/Projects/ng/ultima12/dist/ultima 4000
 ```
+
+#### 6.3 Load web app "stic" in our browser
 
 Running our static server ***stic ../client/dist-static/primeng-quickstart-cli*** with our static folder from the previous tutorial.
 
