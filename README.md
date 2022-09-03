@@ -2,7 +2,7 @@
 
 ## Write a Go static file web server
 
-> ***This tutorial requires some knowledge in Linux, Docker, Angular, and Go Programming Language.***
+> ***This tutorial requires some knowledge in Linux, Docker, Git, Angular, and Go Programming Language.***
 
 ### Table of Contents
 1. Introduction
